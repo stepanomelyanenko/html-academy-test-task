@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="container">
+            <section class="about-us">
+                <h1>Мастер-классы от Create Studio</h1>
+
+                <button id="form-btn" type="submit" class="btn">Записаться</button>
+            </section>
+        </main>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <h2>Заявка на участие</h2>
+                <form name="personal" id="personal">
+                    <label class="visually-hidden" for="form-name">ФИО</label>
+                    <input type="text" id="form-name" class="input-field name" placeholder="ФИО"/>
+
+                    <label class="visually-hidden" for="form-email">E-mail</label>
+                    <input type="email" id="form-email" class="input-field email" placeholder="E-mail"/>
+
+                    <label class="visually-hidden" for="submit-btn">Submit button</label>
+                    <input class="btn submit" id="submit-btn" type="submit" value="Отправить"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="api-service.js"></script>
+</body>
+</html>
+
